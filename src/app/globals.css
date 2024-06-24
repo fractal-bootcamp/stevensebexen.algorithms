@@ -36,3 +36,7 @@ a {
   color: #ffc1c7;
   text-decoration: underline;
 }
+
+input {
+  color: black;
+}

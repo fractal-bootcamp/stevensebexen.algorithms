@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import bubbleSort from './bubbleSort';
+import { bubbleSort } from './bubbleSort';
 
 describe('Bubble Sort', () => {
   test('Sorted array', () => {
