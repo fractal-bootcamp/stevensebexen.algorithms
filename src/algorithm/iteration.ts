@@ -1,5 +1,5 @@
 // Creates an array of intermediate results from running fn on inputValue.
-export function iterationSteps<T>(fn: (x: T, currentDepth: number) => IterationStepResult<T>, inputValue: T, steps: IterationSteps<T> = [], currentDepth:number, maxDepth = 1000): IterationSteps<T> {
+export function iterationSteps<T>(fn: (x: T, currentDepth: number) => IterationStepResult<T>, inputValue: T, steps: IterationSteps<T> = [], currentDepth: number = 0, maxDepth = 1000): IterationSteps<T> {
   if (currentDepth >= maxDepth) throw new Error('Recursion depth max reached.');
 
   const stepResult: IterationStepResult<T> = fn(inputValue, currentDepth);
