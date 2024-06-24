@@ -8,6 +8,7 @@ export default function Sort() {
       <div className='flex gap-2'>
         <Link href='/sort/bubble'>Bubble</Link>
         <Link href='/sort/selection'>Selection</Link>
+        <Link href='/sort/insertion'>Insertion</Link>
       </div>
     </>
   )
