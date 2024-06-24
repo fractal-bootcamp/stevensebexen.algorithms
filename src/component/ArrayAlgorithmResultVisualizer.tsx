@@ -3,7 +3,6 @@ import { useState } from "react";
 interface AlgorithmResultVisualizerProps<T> {
   result: IterationResult<T>;
 }
-
 export function AlgorithmResultVisualizer<T>(props: AlgorithmResultVisualizerProps<T>) {
   const [stepsVisible, setStepsVisible] = useState<boolean>(false);
   return (

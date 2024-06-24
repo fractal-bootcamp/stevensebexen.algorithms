@@ -17,14 +17,4 @@ function bubbleSortStep(inputArray: number[]): IterationStepResult<number[]> {
   return iterationStepResult;
 }
 
-export function bubbleSortParser(input: string): number[] {
-  const result = input
-    .split(',')
-    .map(x => parseFloat(x));
-  
-  if (result.some(x => isNaN(x))) throw new Error('Invalid input.');
-  
-  return result;
-}
-
 export const bubbleSort = iteration(bubbleSortStep);
