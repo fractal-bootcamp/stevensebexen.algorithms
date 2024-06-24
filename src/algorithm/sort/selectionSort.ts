@@ -1,4 +1,3 @@
-import e from "express";
 import { iteration } from "../iteration";
 
 function selectionSortStep(inputArray: number[], currentDepth: number): IterationStepResult<number[]> {
