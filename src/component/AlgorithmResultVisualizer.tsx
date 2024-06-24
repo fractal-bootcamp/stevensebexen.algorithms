@@ -12,6 +12,7 @@ export function AlgorithmResultVisualizer<T>(props: AlgorithmResultVisualizerPro
       <p className='select-none' onClick={() => setStepsVisible(!stepsVisible)}>{stepsVisible ? 'v Hide' : '> Show'} steps</p>
       {stepsVisible &&
         props.result.steps.map((step, index) => <p key={index}>{String(step)}</p>)
+      }
     </>
   );
 }
