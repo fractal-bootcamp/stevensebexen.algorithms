@@ -31,3 +31,8 @@ body {
     text-wrap: balance;
   }
 }
+
+a {
+  color: #ffc1c7;
+  text-decoration: underline;
+}
